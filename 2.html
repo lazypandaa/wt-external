@@ -1,0 +1,46 @@
+<html>
+<body>
+<table border="3px">
+	<tr>
+        <th>c1</th>
+        <th>c2</th>
+        <th>c3</th>
+        <th>c4</th>
+    </tr>
+    <tr>
+        <td colspan="2">a</td>
+        <td rowspan="2">b</td>
+        <td>c</td>
+    </tr>
+    <tr>
+        <td rowspan="2">d</td>
+        <td >e</td>
+        <td>f</td>
+    </tr>
+    <tr>
+        <td colspan="3">g</td>
+    </tr>
+<table>
+</body>
+
+
+
+<!-- b -->
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body align="center">
+<p>background color</p></br>
+<script>
+    $(document).ready(function(){
+        $("p").click(function(){
+        $("p").css("background-color", "red");
+    });
+    $("p").dblclick(function(){
+        $("p").css("background-color", "green");
+    });
+    });
+</script>
+</body>
+</html>

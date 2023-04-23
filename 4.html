@@ -1,0 +1,54 @@
+<html>
+<frameset cols="33%,33%,33%">
+    <frameset rows="50%,50%">
+	<frame src="1.html">
+	<frame src="2.html">
+    </frameset>
+	<frame src="3.html" NAME="F3">
+    <frame src="4.html" NAME="F3">
+</frameset>
+</html>
+
+<!-- 1.html -->
+<html>
+<body align="center" >
+<h1>Frame 1</H1>
+</body>
+</html>
+
+<!-- 2.html -->
+<html>
+<body align="center" >
+<h1>Frame 2</h1>>
+</body>
+</html>
+
+<!-- 3.html -->
+<html>
+<body align="center" >
+<h1>Frame 3</h1>>
+</body>
+</html>
+
+<!-- 4.html -->
+<html>
+<body align="center" >
+<h1>Frame 4</h1>>
+</body>
+</html>
+
+
+
+
+
+<!-- b -->
+
+<?php
+$n = intval(readline("Enter n: "));
+$arr = [];
+for ($i = 0; $i < $n; $i++) {
+    $arr[] = intval(readline("Enter element " . ($i + 1) . ": "));
+}
+$min = min($arr);
+echo "smallest number is: " . $min ;
+?>

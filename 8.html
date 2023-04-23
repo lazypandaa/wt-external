@@ -1,0 +1,74 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body align="center">
+<br>
+<button type="button"  id="hide">hide</button>
+<button type="button" id="show">show</button>
+<button type="button" id="fadein">fadein</button>
+<button type="button"  id="fadeout">fadeout</button>
+<button type="button" id="slideup">slideup</button>
+<button type="button" id="slidedown">slidedown</button>
+<button type="button" id="fadetoggle">fadetoggle</button>
+<button type="button" id="slidetoggle">slidetoggle</button>
+<p>This is a paragraph</p>
+    <script>
+    $(document).ready(function(){
+    $("#show").click(function(){
+        $("p").show()
+        });
+    $("#hide").click(function(){
+        $("p").hide()
+        });
+    $("#fadein").click(function(){
+        $("p").fadeIn()
+        });
+    $("#fadeout").click(function(){
+        $("p").fadeOut()
+        });
+    $("#fadetoggle").click(function(){
+        $("p").fadeToggle()
+        });
+    $("#slideup").click(function(){
+        $("p").slideUp()
+        });
+    $("#slidedown").click(function(){
+        $("p").slideDown()
+        });
+    $("#slidetoggle").click(function(){
+        $("p").slideToggle()
+        });
+    });
+</script>
+</body>
+</html>
+
+<!-- b -->
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <title>AngularJS Directives Exercise</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-controller="myController">
+  <h1>{{ message }}</h1>
+  
+  <ol>
+    <li ng-repeat="item in items">{{ item }}</li>
+  </ol>
+  
+  <input type="text" ng-model="name">
+  <p>you Entered: <span ng-bind="name"></span></p>
+
+  <script>
+    var app = angular.module("myApp", []);
+    app.controller("myController", function($scope) {
+      $scope.message = "The fruits are";
+      $scope.items = ["Apple", "Banana", "Mango"];
+    });
+  </script>
+</body>
+</html>

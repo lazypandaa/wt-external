@@ -1,0 +1,55 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body align="center">
+<p>Welcome to wt lab</p></br>
+<h1>wt lab</h1>
+<script>
+    $(document).ready(function(){
+        $("p").click(function(){
+        $("p").css("background-color", "yellow");
+    });
+    $("p").click(function(){
+        $("p").css("background-color", "yellow");
+    });
+        $("h1").mouseenter(function(){
+        $("h1").css("background-color", "green");
+    });
+        $("p").mouseleave(function(){
+        $("p").css("background-color", "blue");
+    });
+        $("p").mouseover(function(){
+        $("p").css("background-color", "red");
+    });
+    });
+</script>
+</body>
+</html>
+
+
+
+
+<!-- b -->
+
+<!DOCTYPE html>
+<html>
+<body align="center">
+	<h1>Addition</h1>
+	<label>Enter a:</label>
+	<input type="text" id="a"><br>
+	<label>Enter b:</label>
+	<input type="text" id="b">
+	<button onclick="add()">Sum</button><br>
+	<label id="result"></label>
+	<script>
+		function add() {
+			var a = parseInt(document.getElementById("a").value);
+			var b = parseInt(document.getElementById("b").value);
+			var c = a + b;
+			document.getElementById("result").innerHTML = "The sum is " + c;
+		}
+	</script>
+
+</body>
+</html>

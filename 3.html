@@ -1,0 +1,38 @@
+<html lang="en">
+<body align="center">
+<form action="biodata.php" method="POST">
+<h1>Student Registration Form </h1>
+Email : <input type="emai"> <br><br>
+Password : <input type="password"> <br><br>
+name : <input type="text">  <br><br>     
+Gender:<input type="radio" value="male" id="G" name="G">male  <input name="G" id="G" type="radio" value="female">female<br><br>
+<label for="hobbies">HOBBIES:</label>
+    Cricket</label><input type="checkbox">    
+    Movies </label><input type="checkbox">    
+    Music</label><input type="checkbox">
+    <br><br>
+district : <input type="text" name="name"><br><br>
+<button type="submit">submit</button>
+</form>
+</body>
+</html>
+
+
+
+<!-- b -->
+
+<?php
+setcookie("name", "lazy", time() + 3600);
+setcookie("name1", "panda", time() + 3600);
+?>
+<html>
+<head>
+	<title>PHP Cookie Example</title>
+</head>
+<body>
+	<?php
+		echo "Welcome " . $_COOKIE["name"] . "<br>";
+		echo "Welcome " . $_COOKIE["name1"] . "<br>";
+	?>
+</body>
+</html>

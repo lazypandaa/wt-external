@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<p class="welcome">Welcome to WD Lab</p>
+</body>
+</html>
+
+<!-- style.css -->
+.welcome {
+	background-color: yellow;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+<!-- b -->
+<!DOCTYPE html>
+<html>
+<body>
+	<p id="output"></p>
+	<script>
+		var n = parseInt(prompt("Enter the size of the array: "));
+		var numbers = [];
+		for (let i = 0; i < n; i++) {
+			var num = parseInt(prompt("Enter element " + (i + 1) + ": "));
+            numbers[i]=num;
+		}
+        numbers.sort();
+		document.getElementById("output").innerHTML = "After sorting: " + numbers;
+	</script>
+</body>
+</html>
